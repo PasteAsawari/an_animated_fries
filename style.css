@@ -1,0 +1,216 @@
+html{
+    height: 100%;
+}
+body{
+    padding: 32px 0;
+    height: 100%;
+    display:grid;
+    place-content: center;
+}
+@keyframes grow-and-shrink {
+    0%
+    {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.80);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+
+}
+@keyframes eye-ball-shrink {
+    0%{
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(0.80);
+    }
+    100%
+    {
+        transform: scale(1);
+
+    }
+    
+}
+@keyframes blink {
+    0%{
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(0.80);
+    }
+    100%
+    {
+        transform: scale(1);
+
+    }
+    
+}
+.grid-container{
+    display: grid;
+    height:500px;
+    width:400px;
+    grid-template-rows: 200px 300px;
+    background-color: red;
+    animation: grow-and-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+.fries
+{
+    background-color: white !important;
+    border-bottom: 20px solid white !important;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows:repeat(9, 20px);
+    overflow: hidden;
+}
+.box
+{
+    display: grid;
+    background-color:red !important;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,30px);
+
+}
+.fries > div {
+    border: 1px solid rgb(248, 194, 0);
+    background: rgb(255, 200, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right:5px solid rgba(255, 0, 0, 0.129);
+
+}
+.box >div{
+    background-color:black;
+}
+.b1{
+    grid-column: 3 / span 1;
+    grid-row : 2 / span 2;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: black !important;
+    animation:blink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+.b2
+{
+    grid-column: 3 /span 1;
+    grid-row: 3 / span 1;
+    background-color: whitesmoke !important;
+    border: 10px solid black;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    animation: eye-ball-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+.b3{
+    grid-column: 8 / span 1;
+    grid-row: 2 / span 2;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: black;
+    animation:blink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+
+}
+.b4
+{
+    grid-column: 8 /span 1;
+    grid-row: 3 / span 1;
+    background-color: whitesmoke !important;
+    border: 10px solid black;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    animation: eye-ball-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+
+.smile{
+    grid-column: 3 / span 6;
+    grid-row: 5 / span 2;
+    border-bottom-right-radius:35%;
+    border-bottom-left-radius: 35%;
+    background-color: black !important;
+    border-top: 10px solid white !important;
+
+}
+.toungue
+{
+    grid-column: 4 / span 4;
+    grid-row: 6 /span 1;
+    background-color: white;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: pink !important;
+    border: 2px solid black;
+}
+
+.f1{
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 5 ;
+    border-bottom-left-radius: 30px;
+}
+ .f2{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 8;
+}
+.f3
+{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 8;
+
+}
+.f4
+{
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 6 ;
+
+}
+.f5
+{
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 8;
+
+}
+.f6
+{
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 9;
+
+}
+.f7
+{
+    grid-column: 7 / span 1;
+    grid-row: 2 / span 8;
+}
+.f8
+{
+    grid-column: 8 / span 1;
+    grid-row: 1 / span 9;
+
+}
+.f9
+{
+    grid-column: 9 / span 1;
+    grid-row: 4/span 6;
+}
+.f10
+{
+    grid-column: 10 / span 1;
+    grid-row: 5/ span 5;
+}
