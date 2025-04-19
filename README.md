@@ -11,8 +11,10 @@ Features keyframe animations and tasty vibes .
 
 ## 🚀 Getting Started
 ### 📁Clone this repository
-- git clone 
-- cd 
+```bash
+git clone https://github.com/PasteAsawari/an_animated_fries.git
+cd an_animated_fries
+``` 
 ### 💻 Run locally 
 1. open the index.html in your browser
 2.  Enjoy the animation!
