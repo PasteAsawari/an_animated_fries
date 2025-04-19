@@ -25,5 +25,5 @@ Made for fun and practice with CSS Keyframes animation.
 ## Feel free to fork it!
 If you like it, go ahead fork it, start it ⭐and  create your own version!
 
-## License
+## 📄 License
 This project is open source and available under the MIT License.
